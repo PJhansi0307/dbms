@@ -1,0 +1,5 @@
+Q1="SELECT pid as actor_id ,COUNT(pid) as no_of_movies from Cast Group by pid;"
+Q2="SELECT year,COUNT(id) from Movie GROUP BY year order by year ASC;"
+Q3="SELECT year,AVG(rank) AS avg_rank from Movie GROUP BY year having count(id)>=10 order by year DESC;"
+Q4="SELECT year,MAX(rank) as max_rank from Movie GROUP BY year order by year ASC;"
+Q5="SELECT rank,COUNT(id) as no_of_movies from Movie where name LIKE 'a%' group by rank;"
